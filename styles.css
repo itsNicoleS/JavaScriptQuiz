@@ -1,0 +1,38 @@
+#quiz {
+    margin: 20px;
+  }
+  
+  #quiz h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #question {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  #options label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  #options input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  #submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #submit-btn:hover {
+    background-color: #23527c;
+  }
+  
