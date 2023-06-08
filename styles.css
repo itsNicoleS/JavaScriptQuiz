@@ -1,38 +1,73 @@
-#quiz {
-    margin: 20px;
-  }
-  
-  #quiz h2 {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  #question {
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
-  
-  #options label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-  
-  #options input[type="radio"] {
-    margin-right: 5px;
-  }
-  
-  #submit-btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #337ab7;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  #submit-btn:hover {
-    background-color: #23527c;
-  }
-  
+body { display: flexbox;
+  height: 100vw;
+}
+#TimerHeader{
+  float: right;
+  width: 300px;
+  border: 3px solid #5721ad;
+  padding: 10px;
+}
+
+#Question {
+  font-weight: bold;
+  font-size:24px; 
+}
+#quizPartHere {
+  margin-left: 25%;
+}
+#OptionA , #OptionB , #OptionC , #OptionD {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  background-color: purple;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+ 
+}
+#highScoresTable {
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+}
+
+#highScoresTable th {
+  background-color: rgb(117, 89, 36);
+  color: black;
+}
+
+#highScoresTable th,
+#highScoresTable td {
+  color: black;
+  border-bottom: 1px solid #ddd;
+}
+
+#highScoresTable tr:hover {
+  background-color: pink;
+}
+
+#highScoresTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+#high-score-submit-btn {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100px;
+  height: 80px;
+  background-color: #333;
+  color: white
+  transition; transform: 0.3s, background-color 0.3s;
+}
+#high-score-submit-btn:hover {
+  transform: scale(2.5);
+   
+}
+#high-score-submit-btn:hover::after {
+  content: "SUBMIT THAT SHIT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"; 
+  background-color: #ff0000;
+}
+
+

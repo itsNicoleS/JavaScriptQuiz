@@ -1,119 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<link rel="stylesheet" href="styles.css"/> 
-<title>JavaScript Quiz</title>
-</head> 
+    <head>
+        <link rel="stylesheet" href="styles.css"/> 
+        <title>JavaScript Quiz</title>
+    </head> 
+    <body>
+        <div id="quiz"> 
+            <div id="TimerHeader">
+                Time Remaining: 
+                <div id="timerValue">90</div> 
+            
+            </div>
+            <button id="StartGame">START GAME</button>
+        </div>
+        
+<div id="quizPartHere">
+           <div id="Question"> Question1: "Commonly used data types DO NOT include..."</div>
+        <br>
+        <button class="answers" id="OptionA">Booleans</button>
+        <br>
+        <button class="answers" id="OptionB">Alerts</button>
+        <br>
+        <button class="answers" id="OptionC">Numbers</button>
+        <br>
+        <button class="answers" id="OptionD">Strings</button>
+        <br>
+        <div id="WereYouRight"></div>
+    </div>
 
-<body><div Id="#quiz"> 
-<script src="script.js"></script>
-<button ID="StartButton"> START GAME </button>
-<div id="#question">
-    <div><h2>Commonly used data types DO NOT include...</h2></div>
-    <div id="#options">
-    <label>
-        <button> <input type="radio" name="answer" value="option1">
-       Strings
-    </button> </label> 
-    <label>
-        <button> <input type="radio" name="answer" value="option2">
-        Booleans
-    </button> </label> 
-    <label>
-    <button> <input type="radio" name="answer" value="option3">
-    Alerts
-</button> </label> 
-<label>
-    <button> <input type="radio" name="answer" value="option4">
-    Numbers
-</button> </label> </div>
-</div>
-<div id="Question2">
-    <div><h2>What is the condition of If/Else statements enclosed with?</h2></div>
-    <label>
-        <button> <input type="radio" name="answer" value="option1">
-        Quotes '"..."'
-    </button> </label> 
-      <label>
-        <button> <input type="radio" name="answer" value="option2">
-            Curly Braces '{...}'
-        </button> </label> 
-    <label>
-    <button> <input type="radio" name="answer" value="option3">
-        Parenthesis '(...)'
-          </button> </label>
-  <label>
-    <button> <input type="radio" name="answer" value="option4">
-        Square Brackets '[...]'
-        </button> </label> 
-</div>
-<div id="Question3">
-    <div><h2>Arrays in JavaScript can be used to store...</h2></div>
-    <label>
-        <button> <input type="radio" name="answer" value="option1">
-            Numbers and Strings
-            </button> </label> 
-            <label>
-                <button> <input type="radio" name="answer" value="option2">
-                    Booleans
-                    </button> </label> 
-                    <label>
-                        <button> <input type="radio" name="answer" value="option3">
-                            Other
-                            </button> </label> 
-                            <label>
-                                <button> <input type="radio" name="answer" value="option4">
-                                    All of the Above 
-                                    </button> </label> 
-</div>
-<div id="Question4">
-    <div><h2>String values must be surrounded by...</h2></div>
-    <label>
-        <button> <input type="radio" name="answer" value="option1">
-        Quotes '"..."'
-    </button> </label> 
-      <label>
-        <button> <input type="radio" name="answer" value="option2">
-            Curly Braces '{...}'
-        </button> </label> 
-    <label>
-    <button> <input type="radio" name="answer" value="option3">
-        Parenthesis '(...)'
-          </button> </label>
-  <label>
-    <button> <input type="radio" name="answer" value="option4">
-        Square Brackets '[...]'
-        </button> </label> 
-</div>
-<div id="Question5">
-    <div><h2>A very useful tool for debugging code is...</h2></div>
-    <label>
-        <button> <input type="radio" name="answer" value="option4">
-            Java Script 
-            </button> </label> 
-    <label>
-        <button> <input type="radio" name="answer" value="option4">
-            Terminal Bash 
-            </button> </label> 
-    <label>
-        <button> <input type="radio" name="answer" value="option4">
-            For Loops 
-            </button> </label> 
-    <label>
-        <button> <input type="radio" name="answer" value="option4">
-           Console Log 
-            </button> </label> 
-</div>
+    <table id="highScoresTable">
+        <thead>
+            <tr> <th colspan="2">HIGH SCORES</th></tr>
+            <tr>
+                <th>Name</th>
+                <th>Score</th>             
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>William </td>
+                <td>100001</td>
+            </tr>
+        </tbody>
+    </table>
 
-<div Id=#submit-btn> 
-    SUBMIT THAT SHIT
+
+<div id= "high-score-submit-btn"> 
+    ENTER
 </div>
 
 
-</div></body>
-
-
-
-
-
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="script.js"></script>
+    </body>
 </html>
